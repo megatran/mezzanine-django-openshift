@@ -7,6 +7,6 @@ setup(
 	author='Nhan Tran',
 	author_email='nhantrantnt@gmail.com',
 	url='https://github.com/megatran/mezzanine-django-openshift',
-	#install_requires=['pip >= 6.1.1', 'mezzanine==4.1.0'], #uncomment this if Openshift could not install mezzanine from requirements.txt
+	install_requires=['pip >= 8.1.2', 'mezzanine==4.1.0'], 
 	)
 

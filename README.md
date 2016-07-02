@@ -36,13 +36,18 @@ Minimum setup to deploy the latest versions of Django 1.9.x and Mezzanine 4.1x t
     cd mezzanineapp
     git remote add upstream -m master https://github.com/megatran/mezzanine-django-openshift.git
     git pull -s recursive -X theirs upstream master
+
+    - if you encounter error about merge unrelated histories, do 
+    git pull -s recursive -X theirs upstream master --allow-unrelated-histories
+    git status
+    git commit -m "fix merge issue"
 ```
 
 
 - Set Python application environment variable like this:
     
 
-        ``rhc env set OPENSHIFT_PYTHON_WSGI_APPLICATION=wsgi/wsgi.py --app mezzanineapp`
+        rhc env set OPENSHIFT_PYTHON_WSGI_APPLICATION=wsgi/wsgi.py --app mezzanineapp
 
 
 - Push the repo upstream
