@@ -1,0 +1,6 @@
+
+# Attention: this may slow down your application.
+# Use .httaccess sparingly.
+RewriteEngine On
+RewriteRule ^application/robots.txt /static/wwwroot/robots.txt [L]
+RewriteRule ^application/favicon.ico /static/wwwroot/favicon.ico [L]
