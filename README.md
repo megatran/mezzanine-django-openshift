@@ -43,6 +43,9 @@ Minimum setup to deploy the latest versions of Django 1.9.x and Mezzanine 4.1x t
     git commit -m "fix merge issue"
 ```
 
+- Change file permission to all files (build, deploy, post_deploy, pre_build)in .openshift/action_hooks to chmod 755
+- It's easy on Linux, but in Windows, you can use git to do so 
+    git update-index --chmod=(+|-)x <file>
 
 - Set Python application environment variable like this:
     
