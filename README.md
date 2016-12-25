@@ -1,3 +1,8 @@
+<p align = "center">
+    <img src="http://i.imgur.com/mKHV9TO.jpg" />
+</p>
+
+<br>
 Django + Mezzanine On OpenShift
 ===
 
